@@ -56,28 +56,20 @@ usuario apache/www-data.
 ## ##  Guía de Despliegue
 
 ### ### 1. Preparación Local
-
-### ### 2. Carga del Contenido Web (SCP)
-
-### ### 3. Sincronización Final
-
-#### 1.
-
-#### 2.
-
-#### 3.
-
 ```
 chmod +x deploy.sh
-chmod 400 nuevos.pem
+chmod 400 tu archivo.pem
 ./deploy.sh
 ```
+### ### 2. Carga del Contenido Web (SCP)
 ```
-scp -i nuevos.pem -r ./sitio-web/src/* ec2-user@3.227.16.224:/home/ec2-user/
+scp -i tuarchivo.pem -r ./tu/ruta/* ec2-user@tuIP:/home/ec2-user/
 ```
+### ### 3. Sincronización Final
 ```
-ssh -i nuevos.pem ec2-user@3.227.16.
+ssh -i tuarchivo.pem ec2-user@tuIP
 ```
+
 ```
 # Ejecutar dentro del servidor:
 sudo mv /home/ec2-user/* /mnt/datos/
@@ -86,9 +78,11 @@ sudo chmod -R 755 /mnt/datos
 sudo systemctl restart httpd
 ```
 
-## ##  Acceso al Sitio
 
-```
+
+
+## ##  Acceso al Sitio
+  
 URL Pública: http://3.227.16.224/
-```
+
 
