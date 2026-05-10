@@ -1,15 +1,13 @@
 # # Ethical Hacking services (Laboratorio taller informatica)
 
-# Services
-
 **Autores:** Benjamin Uribe y Max Coñoman
-
+  
 Este repositorio contiene la solución de infraestructura
 automatizada para el despliegue del portal **Ethical Hacking
 Services**. El proyecto integra herramientas de AWS CLI y
 administración avanzada de servidores Linux para garantizar
 un entorno web persistente, seguro y escalable.
-
+  
 ## ##  Arquitectura de Infraestructura
 
 ## (`deploy.sh`)
